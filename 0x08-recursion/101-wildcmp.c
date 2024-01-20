@@ -2,8 +2,8 @@
 
 /**
  * wildcmp - compares 2 strings
- * @*s1: first string
- * @*s2: second string
+ * @s1: first string
+ * @s2: second string
  * Return: 0
  */
 
