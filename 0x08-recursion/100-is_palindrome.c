@@ -17,19 +17,19 @@ int _strlen_recursion(char *s)
 
 /**
  * compare_string - compare 2 strings
- * @a: first string
- * @b: second string
+ * @left: first string
+ * @right: second string
  * @s: string
  * Return: always 0
  */
 
-int compare_string(char *s, int a, int b)
+int compare_string(char *s, int left, int right)
 {
-	if (*(s + a) == *(s + b))
+	if (*(s + left) == *(s + right))
 	{
-		if (a == b || a == b + 1)
+		if (left == right || left == right + 1)
 			return (1);
-		return (0 + compare_string(s,  a + 1, b + 1));
+		return (0 + compare_string(s,  left + 1, right - 1));
 	}
 	return (0);
 }
